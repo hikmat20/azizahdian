@@ -1,23 +1,18 @@
 <?php require_once 'config/connection.php'; ?>
+<?php require_once 'models/timesince.php'; ?>
 <!DOCTYPE html>
 <html style="height:100%">
 
 <head>
-	<title>Wedding Teny &mdash; Bahrudin </title>
+	<title>Wedding Ayas &mdash; Usman </title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<title>Wedding Teny &mdash; Bahrudin </title>
-	<meta property="og:title" content="The Wedding of Teny & Bahrudin" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" <meta property="og:title" content="The Wedding of Ayas & Usman" />
 	<meta property="og:image" content="photos/cover2.jpg" />
-	<meta property="og:url" content="http://tenybahrudin.nikahalal.com" />
-	<meta property="og:site_name" content="15 Juli 2021 -- The Wedding of Teny & Bahrudin" />
-	<meta property="og:description" content="15 Juli 2021" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-	<link rel="shortcut icon" href="images/icon-nikahalal.ico" type="image/x-icon" />
+	<meta property="og:url" content="http://AyasUsman.nikahalal.com" />
+	<meta property="og:site_name" content="11 Desember 2021 -- The Wedding of Ayas & Usman" />
+	<meta property="og:description" content="The Wedding of Ayas & Usman @nikahalal.com" />
+	<link rel="shortcut icon" href="images/icon/icon.ico" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet">
@@ -38,25 +33,24 @@
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
 	<style>
-		body {
+		/* body {
 			background-color: rgb(255 250 236);
-		}
-
+		} */
 		@font-face {
 			font-family: AksaraJawa;
 			src: url(assets/fonts/AmellindaWeddings.otf);
 		}
 	</style>
-
 </head>
 
 <body>
+	<div class="fh5co-loader"></div>
 	<audio loop preload="auto" id="myAudio">
-		<source src="medias/kebo-giro.mp3">
+		<source src="images/media/endless.mp3">
 	</audio>
 
-	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/mute.png" width="30px;"></a>
-	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/nomute.png" width="30px;"></a>
+	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/icon/mute.png" width="30px;"></a>
+	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/icon/nomute.png" width="30px;"></a>
 
 	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="static" data-keyboard="false">
 		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
@@ -67,7 +61,7 @@
 							The Wedding of
 						</span>
 						<span style="color:white;font-family: AksaraJawa;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-							Teny & Bahrudin
+							Ayas & Usman
 						</span>
 
 						<?php if (@$_GET['to'] != '') : ?>
@@ -89,24 +83,10 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="fh5co-loader"></div>
-
 	<div id="pages">
-		<!-- NAVIGATION -->
-		<nav class="fh5co-nav" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="#"><strong></strong></a></div>
-					</div>
-				</div>
-
-			</div>
-		</nav>
 
 		<!-- HEADER -->
-		<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
+		<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.3">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -115,7 +95,7 @@
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1 class="animated growIn slower" data-id="2" style="font-family:Playfair, serif; color:#ffffff">The Wedding of</h1>
 								<h1 style="color:white;font-family: AksaraJawa;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-									Teny &amp; Bahrudin</h1>
+									Ayas &amp; Usman</h1>
 								<br>
 								<br>
 
@@ -141,7 +121,7 @@
 		</header>
 
 		<!-- COUPLE -->
-		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.jpg);background-repeat: no-repeat;background-size: cover; background-position: left top;">
+		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(images/bg/bg-03.jpg );background-repeat: no-repeat;background-size: cover; background-position: left top;">
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -154,20 +134,20 @@
 				<div class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
-							<img src="photos/cewe.png" alt="groom" class="img-responsive">
+							<img src="images/bride/cewe.png" alt="Mempelai Wanita" class="img-responsive">
 						</div>
 						<div class="desc-groom">
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Wanita</h3>
 							<h3 style="color:white;display:block;font-size:30px;">
-								Teny Yustian</h3>
+								Larasati, S.Ak</h3>
 							<i class="fa fa-instagram" style="color:#fff"></i>
-							<a href="https://www.instagram.com/tennytian/" style="color:#ffffff">
-								tennytian</a>
+							<a href="https://www.instagram.com/larasatii_24" style="color:#ffffff">
+								larasatii_24</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri pertama dari</i><br>Bapak. Heru Sanjoyo
-								<br>Ibu. Lilik Nuryati
+									Putri dari</i><br>Bapak Pendi Wiyanto
+								<br>Ibu Rohaeti
 							</p>
 
 						</div>
@@ -175,19 +155,19 @@
 					<p class="heart text-center"><i class="icon-heart2" style="color:#3d2505;"></i></p>
 					<div class="couple-half">
 						<div class="bride">
-							<img src="photos/cowo.png" alt="groom" class="img-responsive">
+							<img src="images/bride/cowo.png" alt="Mempelai Pria" class="img-responsive">
 						</div>
 						<div class="desc-bride">
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Pria</h3>
 							<h3 style="color:white;display:block;font-size:30px;">
-								Achmad Bahrudin </h3>
+								Usman, S.Kom </h3>
 							<i class="fa fa-instagram" style="color:#fff"></i>
-							<a href="https://www.instagram.com/achmadbahrudin704/" style="color:#ffffff">
-								achmadbahrudin704</a>
+							<a href="https://www.instagram.com/usman_gzr/" style="color:#ffffff">
+								usman_gzr</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putra pertama dari</i><br>Bapak. Surat<br>Ibu. Marmi </p>
+									Putra dari</i><br>Bapak Muchlas<br>Ibu Etih </p>
 						</div>
 					</div>
 				</div>
@@ -195,11 +175,11 @@
 		</div>
 
 		<!-- countdonw -->
-		<div id="fh5co-gallery" class="fh5co-bg" style=" background-image:url(photos/bg08.jpg);background-repeat: repeat;background-size: cover;">
+		<div id="" class="fh5co-bg" style=" background-image:url(images/bg/bg-02.jpg);background-size: contain;">
 			<div class="container">
 				<div class="couple-wrap animate-box">
 					<div class="col-md-12" style="text-align:center;">
-						<h1 class="text-center" style="font-family:AksaraJawa;display:block;font-size: 42px;color: #3d2505;">
+						<h1 class="text-center" style="font-family:;display:block;font-size: 42px;color: #3d2505;">
 							Menghitung Hari</h1>
 						<div id="hitungmundur1" class="gaya" style="background-color:#3d2505"></div>
 						<div id="hitungmundur2" class="gaya" style="background-color:#3d2505"></div>
@@ -211,7 +191,7 @@
 		</div>
 
 		<!-- EVENT -->
-		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(photos/banner1.jpg); background-position:right top;">
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(im  
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -222,70 +202,62 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-12">
-								<div class="col-md-4 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>
-											Akad
-										</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>09.00 WIB </span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>15 Juli 2021
-										</div>
-										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
-												Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
-										</p>
-									</div>
+					<div class="col-md-12">
+						<div class="col-md-4 col-sm-6 text-center">
+							<div class="event-wrap animate-box">
+								<h3>
+									Akad
+								</h3>
+								<div class="event-col">
+									<i class="icon-clock"></i>
+									<span>09.00 WIB </span>
 								</div>
-								<div class="col-md-4 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>
-											Resepsi
-										</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>11.00 WIB - Selesai </span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>15 Juli 2021
-										</div>
-										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
-												Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
-										</p>
-									</div>
+								<div class="event-col">
+									<i class="icon-calendar"></i>
+									<span>15 Juli 2021
 								</div>
-								<div class="col-md-4 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>
-											UNDUH MANTU
-										</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>11.00 WIB - Selesai </span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>16 Juli 2021
-										</div>
-										<p>
-											<label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Pria</label>
-											<br><span style="color:#ffffff;">Jl. Kunjang-Badas, Ds. Balongrejo, Kec. Badas</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-10 col-md-offset-3">
-
+								<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
+										Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
+								</p>
 							</div>
 						</div>
-
+						<div class="col-md-4 col-sm-6 text-center">
+							<div class="event-wrap animate-box">
+								<h3>
+									Resepsi
+								</h3>
+								<div class="event-col">
+									<i class="icon-clock"></i>
+									<span>11.00 WIB - Selesai </span>
+								</div>
+								<div class="event-col">
+									<i class="icon-calendar"></i>
+									<span>15 Juli 2021
+								</div>
+								<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
+										Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 text-center">
+							<div class="event-wrap animate-box">
+								<h3>
+									UNDUH MANTU
+								</h3>
+								<div class="event-col">
+									<i class="icon-clock"></i>
+									<span>11.00 WIB - Selesai </span>
+								</div>
+								<div class="event-col">
+									<i class="icon-calendar"></i>
+									<span>16 Juli 2021
+								</div>
+								<p>
+									<label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Pria</label>
+									<br><span style="color:#ffffff;">Jl. Kunjang-Badas, Ds. Balongrejo, Kec. Badas</span>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -354,7 +326,7 @@
 				<br><br>
 				<h3 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:18px;">
 					Hormat Kami, <br>
-					Teny & Bahrudin</h3>
+					Ayas & Usman</h3>
 			</div>
 
 			<div id="fh5co-gallery" class="fh5co-section-gray">

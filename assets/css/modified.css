@@ -63,16 +63,18 @@ body {
 }
 @media (max-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/banner.jpg);
+      background-image: url(../../images/bg/bg-01.jpg);
+      background-position: top center !important;
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover.jpg);
+      background-image: url(../../images/bg/small-cover.jpg);
       background-attachment: scroll;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top;
-      height: 790px;
+      height: 97vh;
+      border-radius: 0.5rem;
    }
 
    .caseless {
@@ -82,18 +84,19 @@ body {
       font-size: 14px;
    }
 }
+
 @media (min-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/banner.jpg);
+      background-image: url(../../images/bg/bg-01.jpg);
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover1.jpg);
+      background-image: url(../../images/bg/cover.jpg);
       /* background-attachment: fixed; */
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 95vh;
+      height: 92vh;
       border-radius: 0.5rem;
    }
 
