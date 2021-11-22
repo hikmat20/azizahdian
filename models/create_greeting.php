@@ -2,18 +2,17 @@
 require_once '../config/connection.php';
 require_once '../models/timesince.php';
 
-$CustomerId = 'C0621001';
+$CustomerId = 'CL21008';
+$order = 'NH1121005';
 $nama = $greeting = '';
 $date = date('Y-m-d H:i:s');
 $callback = [];
-
-
 
 if (isset($_POST)) {
     $nama         = $_POST['Name'];
     $greeting     = $_POST['Greeting'];
 
-    $query = mysqli_query($conn, "INSERT INTO greeting(customer_id,`name`,greeting,created_at) VALUES('$CustomerId','$nama','$greeting','$date')");
+    $query = mysqli_query($conn, "INSERT INTO greeting(customer_id,`name`,greeting,created_at,order_id) VALUES('$CustomerId','$nama','$greeting','$date','$order')");
 
     if (!$query) {
         $callback = [
