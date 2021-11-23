@@ -272,7 +272,7 @@
 						<span>Google Maps</span>
 						<h3 style='color:white;font-family:GreatVibes;display:block;font-size:32px;'>Lokasi Pernikahan</h3>
 						<div class="text-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.664509637216!2d109.17639351468969!3d-6.930643194992517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb8a30f1d1143%3A0x48583f9b7e937e2d!2sJl.%20Raya%20Lebeteng%20No.25%2C%20Menggala%2C%20Lebeteng%2C%20Kec.%20Tarub%2C%20Tegal%2C%20Jawa%20Tengah%2052184!5e0!3m2!1sid!2sid!4v1636641290369!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664.239551049112!2d108.9112599651805!3d-7.212216126384905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f84ae51ac3aa9%3A0x3f80d17e8c9d5050!2sBakso%20Apolo%20Putra%20Pakiringan!5e0!3m2!1sid!2sid!4v1637635824592!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 
 						<div class="text-center pt-3">
