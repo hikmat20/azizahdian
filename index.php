@@ -15,8 +15,8 @@
 	<meta property="og:title" content="The Wedding of Ayas & Usman" />
 	<meta property="og:image" content="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" />
 	<meta property="og:url" content="<?= isset($base_url) ? $base_url : ''; ?>" />
-	<meta property=" og:site_name" content="11 Desember 2021 -- The Wedding of Ayas & Usman" />
-	<meta property="og:description" content="The Wedding of Ayas & Usman @nikahalal.com" />
+	<meta property=" og:site_name" content="The Wedding of Ayas & Usman @nikahalal.com" />
+	<meta property="og:description" content="11 Desember 2021 - The Wedding of Ayas & Usman" />
 	<link rel="shortcut icon" href="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -324,7 +324,6 @@
 						<br><br>
 						<img src="images/gallery/Foto Moment 7.jpeg" style="width:100%">
 						<br><br>
-						<img src="images/gallery/Foto Moment 8.jpeg" style="width:100%">
 						<div class="text-center">
 							<p style='color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;'>You are my answered prayer, my fulfilled wish, my realized dream.</p>
 						</div>
