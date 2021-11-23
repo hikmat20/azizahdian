@@ -1,6 +1,6 @@
 <?php require_once 'config/connection.php'; ?>
 <?php require_once 'models/timesince.php'; ?>
-<?php //$base_url = 'http://nikahalal.com/ayasusman/'; 
+<?php $base_url = 'https://nikahalal.com/ayasusman/';
 ?>
 <!DOCTYPE html>
 <html style="height:100%">
