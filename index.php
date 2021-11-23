@@ -125,8 +125,7 @@
 								<br>
 								<br>
 								<p>
-									<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MDBuZzlwNzRsNHUwYzB1NHFsM2YyMmM1dXQgMG9tajRuZDRka3NiMTd1N3ZrYWNnZ2VvaGdAZw&tmsrc=0omj4nd4dksb17u7vkacggeohg%40group.calendar.google.com" class="btn btn-default btn-sm" style="color:#2b2c2e;" target="blank">Save
-										the date</a>
+									<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NHBzMmQ3bDE3azdmazRqOXJ1M2szdTl1cDcgMHIzbTNmMXU4N2h1MGlsNzI3b2JxdXZjYW9AZw&tmsrc=0r3m3f1u87hu0il727obquvcao%40group.calendar.google.com" class="btn btn-default btn-sm" style="color:#2b2c2e;" target="blank">Save the date</a>
 								</p>
 								<br>
 								<br>
