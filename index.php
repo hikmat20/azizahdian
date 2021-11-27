@@ -36,6 +36,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/modified.css">
 	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/sweetalert2/dist/sweetalert2.css">
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
 	<style>
 		/* body {
@@ -250,7 +251,7 @@
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
-											<span>22 Desember 2021
+											<span>11 Desember 2021
 										</div>
 										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Wanita</label><br>
 											<span style="color:#ffffff;">Jl. Pakiringan - Bantarkawung Rt. 001/003 Bantarkawung, Brebes - Jawa Tengah</span>
@@ -304,26 +305,51 @@
 		</div>
 
 		<div id="fh5co-gallery" class="fh5co-section-gray">
-			<div class="container">
+			<div class="">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>Our Memories</span>
 						<h2 style='color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;'>Gallery</h2>
-						<img src="images/gallery/Foto Moment 1.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 2.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 3.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 4.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 5.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 6.jpeg" style="width:100%">
-						<br><br>
-						<img src="images/gallery/Foto Moment 7.jpeg" style="width:100%">
-						<br><br>
-						<div class="text-center">
+						<div class="row">
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment1.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment2.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment3.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment5.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment4.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment8.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment9.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment10.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment11.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment13.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment14.jpeg" style="width:100%" class="photo">
+							</div>
+							<div class="col-md-6" style="margin-bottom: 1em;">
+								<img src="images/gallery/Foto-Moment15.jpeg" style="width:100%" class="photo">
+							</div>
+						</div>
+
+						<div class="text-center" style="padding: 1.5em;">
 							<p style='color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;'>You are my answered prayer, my fulfilled wish, my realized dream.</p>
 						</div>
 					</div>
@@ -420,10 +446,28 @@
 	<script src="assets/js/simplyCountdown.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/index.js"></script>
+	<script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
 	<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
 
 
 	<script>
+		// $(document).on('click', '.photo', function() {
+		// 	let url_image = $(this).attr('src');
+		// 	console.log(url_image);
+		// 	Swal.fire({
+		// 		// title: 'Custom width, padding, background.',
+		// 		width: '100%',
+		// 		padding: '30em',
+		// 		background: `url(` + url_image + `) center no-repeat`,
+		// 		backgroundSize: 'contain',
+		// 		backdrop: `rgba(0,0,0,0.4)`,
+		// 		showConfirmButton: false
+		// 	})
+
+
+		// })
+
+
 		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
 		// default example
