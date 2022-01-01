@@ -1,22 +1,50 @@
 <?php require_once 'config/connection.php'; ?>
 <?php require_once 'models/timesince.php'; ?>
-<?php $base_url = 'https://nikahalal.com/ayasusman/';
+<?php $base_url = 'https://nikahalal.com/azizahdian/'; ?>
+
+<?php
+// Acara
+$event_date 		= '22 Januari 2022';
+$event_time			= '10.00 s/d 14.00';
+$event_location		= 'Rumah Mempelai Wanita';
+$event_address		= ' Jl. Kyai Hasyim, Gg. Sawo, RT/RW. 003/003, Kel. Joglo, Kec. Kembangan, Jakarta Barat. Patokan depan rumah RT Hasyim';
+$maps_link			= 'https://maps.google.com/maps?q=-6.2166337%2C106.750512&z=17&hl=id';
+$embed_maps			= 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1595269791293!2d106.75042790041108!3d-6.216616810889628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf6d389d573b034d!2zNsKwMTInNTkuOSJTIDEwNsKwNDUnMDEuOCJF!5e0!3m2!1sid!2sid!4v1641056105386!5m2!1sid!2sid';
+
+
+//MEMPELAI WANITA
+$bride 				= 'Azizah';
+$bride_full_name	= 'Nur Azizah';
+$bride_ig 			= 'nurzzah_';
+$bride_child 		= '2';
+$bride_father 		= 'Alm. Bpk. Sanijan';
+$bride_mother 		= 'Ibu Sri Lestari';
+
+//MEMPELAI PRIA
+$groom 				= 'Dian';
+$groom_ig 			= 'dooweeee';
+$groom_full_name 	= 'Dwi Kurdianto';
+$groom_child 		= '2';
+$groom_father 		= 'Bpk. Suripto';
+$groom_mother 		= 'Ibu Fatma Puji AstutiIibu ';
 ?>
+
+
 <!DOCTYPE html>
 <html style="height:100%">
 
 <head>
-	<title>Wedding Ayas &mdash; Usman </title>
+	<title>Wedding <?= $bride; ?> &mdash; <?= $groom; ?> </title>
 	<meta charset="utf-8">
 	<link href="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" rel="icon">
 	<link href="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" rel="apple-touch-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-	<meta property="og:title" content="The Wedding of Ayas & Usman" />
+	<meta property="og:title" content="The Wedding of <?= $bride; ?> & <?= $groom; ?>" />
 	<meta property="og:image" content="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" />
 	<meta property="og:url" content="<?= isset($base_url) ? $base_url : ''; ?>" />
-	<meta property=" og:site_name" content="The Wedding of Ayas & Usman @nikahalal.com" />
-	<meta property="og:description" content="11 Desember 2021 - The Wedding of Ayas & Usman" />
+	<meta property=" og:site_name" content="The Wedding of <?= $bride; ?> & <?= $groom; ?> @nikahalal.com" />
+	<meta property="og:description" content="11 Desember 2021 - The Wedding of <?= $bride; ?> & <?= $groom; ?>" />
 	<link rel="shortcut icon" href="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -67,7 +95,7 @@
 <body>
 	<div class="fh5co-loader"></div>
 	<audio loop preload="auto" id="myAudio">
-		<source src="images/media/endless.mp3">
+		<source src="images/media/song.mp3">
 	</audio>
 
 	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/setting/icon/mute.png" width="30px;"></a>
@@ -82,7 +110,7 @@
 							The Wedding of
 						</span>
 						<span style="color:white;font-family: GreatVibes;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-							Ayas & Usman
+							<?= $bride; ?> & <?= $groom; ?>
 						</span>
 
 						<?php if (@$_GET['to'] != '') : ?>
@@ -116,7 +144,7 @@
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1 class="animated growIn slower" data-id="2" style="font-family:Playfair, serif; color:#ffffff">The Wedding of</h1>
 								<h1 style="color:white;font-family: GreatVibes;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-									Ayas &amp; Usman</h1>
+									<?= $bride; ?> &amp; <?= $groom; ?></h1>
 								<br>
 								<br>
 								<div id='hitungmundur1' class='gaya' style='background-color:#2b2c2e'></div>
@@ -163,15 +191,13 @@
 							<h3 style="color:white;font-family:GreatVibes;display:block;font-size:26px;">
 								Mempelai Wanita</h3>
 							<h3 style="color:white;display:block;font-size:36px;font-family:Lucien;">
-								Larasati, S.Ak</h3>
+								<?= $bride_full_name; ?></h3>
 							<i class="fa fa-instagram" style="color:#fff"></i>
-							<a href="https://www.instagram.com/larasatii_24" style="color:#ffffff">
-								@larasatii_24</a>
+							<a href="https://www.instagram.com/<?= $bride_ig; ?>" style="color:#ffffff" target="_blank">
+								@<?= $bride_ig; ?></a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri dari</i><br>Bapak Pendi Wiyanto
-								<br>Ibu Rohaeti
-							</p>
+									Putri ke-<?= $bride_child; ?> dari</i><br><?= $bride_father; ?><br><?= $bride_mother; ?></p>
 
 						</div>
 					</div>
@@ -184,13 +210,12 @@
 							<h3 style="color:white;font-family:GreatVibes;display:block;font-size:28px;">
 								Mempelai Pria</h3>
 							<h3 style="color:white;display:block;font-size:36px;font-family:Lucien;">
-								Usman, S.Kom</h3>
+								<?= $groom_full_name; ?></h3>
 							<i class="fa fa-instagram" style="color:#fff"></i>
-							<a href="https://www.instagram.com/usman_gzr/" style="color:#ffffff">
-								@usman_gzr</a>
+							<a href="https://www.instagram.com/<?= $groom_ig; ?>/" style="color:#ffffff" target="_blank">
+								@<?= $groom_ig; ?></a>
 							<!-- untuk deskripsi mempelai -->
-							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putra dari</i><br>Bapak Muchlas<br>Ibu Etih </p>
+							<p style="color:#ffffff;"><i style="font-size:15px;">Putra ke-<?= $groom_child; ?> dari</i><br><?= $groom_father; ?><br><?= $groom_mother; ?></p>
 						</div>
 					</div>
 				</div>
@@ -219,45 +244,23 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-6 col-sm-6 text-center">
-									<div class="event-wrap animate-box">
-										<h3>
-											Akad
-										</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>09.00 WIB </span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>11 Desember 2021
-										</div>
-										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Wanita</label><br>
-											<span style="color:#ffffff;">Jl. Pakiringan - Bantarkawung Rt. 001/003 Bantarkawung, Brebes - Jawa Tengah</span>
-										</p>
-									</div>
+					<div class="display-tc">
+						<div class="col-md-6 col-sm-6 col-md-offset-3 text-center">
+							<div class="event-wrap animate-box">
+								<h3>
+									Akad/Resepsi
+								</h3>
+								<div class="event-col">
+									<i class="icon-clock"></i>
+									<span><?= $event_time; ?> </span>
 								</div>
-								<div class="col-md-6 col-sm-8 text-center">
-									<div class="event-wrap animate-box">
-										<h3>
-											Resepsi
-										</h3>
-										<div class="event-col">
-											<i class="icon-clock"></i>
-											<span>11.00 WIB - Selesai</span>
-										</div>
-										<div class="event-col">
-											<i class="icon-calendar"></i>
-											<span>11 Desember 2021
-										</div>
-										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Wanita</label><br>
-											<span style="color:#ffffff;">Jl. Pakiringan - Bantarkawung Rt. 001/003 Bantarkawung, Brebes - Jawa Tengah</span>
-										</p>
-									</div>
+								<div class="event-col">
+									<i class="icon-calendar"></i>
+									<span><?= $event_date; ?>
 								</div>
+								<p><label style="font-weight:normal; font-size:20px;"><?= $event_location; ?></label><br>
+									<span style="color:#ffffff;"><?= $event_address; ?></span>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -270,13 +273,16 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>Google Maps</span>
-						<h3 style='color:white;font-family:GreatVibes;display:block;font-size:32px;'>Lokasi Pernikahan</h3>
+						<br>
+						<br>
+						<h3 class="pt-3" style='color:white;font-family:GreatVibes;display:block;font-size:32px;'>Lokasi Pernikahan</h3>
 						<div class="text-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664.239551049112!2d108.9112599651805!3d-7.212216126384905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f84ae51ac3aa9%3A0x3f80d17e8c9d5050!2sBakso%20Apolo%20Putra%20Pakiringan!5e0!3m2!1sid!2sid!4v1637635824592!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="<?= $embed_maps; ?>" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 
-						<div class="text-center pt-3">
-							<a href='https://maps.app.goo.gl/jn1GGDn1P6W5Takd9' class='btn btn-default btn-sm' style='color:#2b2c2e;' target='blank'>BUKA PETA</a>
+						<div class="text-center pt-5">
+							<br>
+							<a href='<?= $maps_link; ?>' class='btn btn-default btn-sm' style='color:#2b2c2e;' target='blank'>BUKA PETA</a>
 						</div>
 					</div>
 				</div>
@@ -300,7 +306,7 @@
 				<br><br>
 				<h3 style="color:#2b2c2e;font-family:GreatVibes;display:block;font-size:28px;">
 					Hormat Kami, <br>
-					Ayas & Usman</h3>
+					<?= $bride; ?> & <?= $groom; ?></h3>
 			</div>
 		</div>
 
@@ -312,40 +318,28 @@
 						<h2 style='color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;'>Gallery</h2>
 						<div class="row">
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment1.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-1.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment2.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-2.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment3.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-3.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment5.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-4.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment4.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-5.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment8.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-6.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment9.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-7.jpg" style="width:100%" class="photo">
 							</div>
 							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment10.jpeg" style="width:100%" class="photo">
-							</div>
-							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment11.jpeg" style="width:100%" class="photo">
-							</div>
-							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment13.jpeg" style="width:100%" class="photo">
-							</div>
-							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment14.jpeg" style="width:100%" class="photo">
-							</div>
-							<div class="col-md-6" style="margin-bottom: 1em;">
-								<img src="images/gallery/Foto-Moment15.jpeg" style="width:100%" class="photo">
+								<img src="images/gallery/azizah-dan-dian-8.jpg" style="width:100%" class="photo">
 							</div>
 						</div>
 
@@ -361,21 +355,7 @@
 
 	<div id="fh5co-testimonial">
 		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>Best Gifts</span>
-					<h2 style="color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;"></h2>
-					<h2 style='color:#2b2c2e;font-family:GreatVibes;display:block;font-size:32px;'>Hadiah</h2>
-					<h4 class='animated growIn slower' data-id='2'>Bagi keluarga, sahabat dan rekan yang ingin mengirimkan hadiah, bisa dikirimkan melalui tautan berikut:</h4>
-					<h4 class='animated growIn slower' data-id='2'>
-						<strong>
-							BCA a/n LARASATI<br>
-							6790153985
-						</strong>
-					</h4>
-					<img src="images/bg/norek.jpg" alt="Rekening" height="200px">
-				</div>
-			</div>
+			<!--  -->
 			<div class="row animate-box fh5co-section-gray">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<span>Best Wishes</span>
@@ -391,12 +371,12 @@
 						<div id="alertMsg"></div>
 						<br>
 						<img src="images/divider/floww.png" style="width:100px;"><br>
-						<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting where customer_id = 'CL21008' order by created_at DESC");
+						<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting where customer_id = 'CL21009' order by created_at DESC");
 						require_once 'models/timesince.php';
 						if ($sql->num_rows > 0) : ?>
+							<span>Ucapan : (<span class="counter_greeting"><?= $sql->num_rows ?></span>)</span>
+							<hr>
 							<div id="list-greeting" class="text-left" style="padding: 0px 7px ;">
-						    <span>Ucapan : (<?= $sql->num_rows ?>) </span>
-								<hr>
 								<?php
 								foreach ($sql as $result) : ?>
 									<div class="panel panel-solid" style="box-shadow:3px 6px 9px rgb(0 0 0 / 5%) !important">
@@ -490,10 +470,10 @@
 		Hitung();
 
 		function Hitung() {
-			// 15 Juli 2021
-			tahun = 2021;
-			bulan = 12;
-			hari = 11;
+
+			tahun = 2022;
+			bulan = 01;
+			hari = 22;
 			jam = 09;
 			menit = 00;
 			detik = 00;
@@ -587,6 +567,8 @@
 								$('.alert-success').fadeOut('slow');
 								$('.newGreeting').removeClass('alert-warning').animate('ease');
 								$('.newGreeting').addClass('panel').animate('ease');
+								let counter = $('.counter_greeting').text();
+								$('.counter_greeting').text(parseInt(counter) + 1);
 							}, 5000)
 
 						} else {
