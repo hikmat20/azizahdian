@@ -395,10 +395,11 @@
 						require_once 'models/timesince.php';
 						if ($sql->num_rows > 0) : ?>
 							<div id="list-greeting" class="text-left" style="padding: 0px 7px ;">
+						    <span>Ucapan : (<?= $sql->num_rows ?>) </span>
 								<hr>
 								<?php
 								foreach ($sql as $result) : ?>
-									<div class="panel panel-solid">
+									<div class="panel panel-solid" style="box-shadow:3px 6px 9px rgb(0 0 0 / 5%) !important">
 										<div class="panel-heading">
 											<div class="panel-title with-border">
 												<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><?= time_since(strtotime($result['created_at'])); ?></i>
