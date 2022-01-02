@@ -46,11 +46,11 @@ $groom_mother 		= 'Ibu. Sri Lestari';
 	<meta property=" og:site_name" content="The Wedding of <?= $bride; ?> & <?= $groom; ?> @nikahalal.com" />
 	<meta property="og:description" content="<?= $event_date; ?> - The Wedding of <?= $bride; ?> & <?= $groom; ?>" />
 	<link rel="shortcut icon" href="<?= isset($base_url) ? $base_url : ''; ?>images/setting/thumbnail/thumbnail.jpg" type="image/x-icon" />
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
-	<link href="https://fonts.googleapis.com/css2?family=GreatVibes&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
-	<link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
