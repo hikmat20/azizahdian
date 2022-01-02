@@ -17,16 +17,16 @@ $bride 				= 'Azizah';
 $bride_full_name	= 'Nur Azizah';
 $bride_ig 			= 'nurzzah_';
 $bride_child 		= '2';
-$bride_father 		= 'Alm. Bpk. Sanijan';
-$bride_mother 		= 'Ibu Sri Lestari';
+$bride_father 		= 'Bpk. Suripto';
+$bride_mother 		= 'Ibu Fatma Puji Astuti';
 
 //MEMPELAI PRIA
 $groom 				= 'Dian';
 $groom_ig 			= 'dooweeee';
 $groom_full_name 	= 'Dwi Kurdianto';
 $groom_child 		= '2';
-$groom_father 		= 'Bpk. Suripto';
-$groom_mother 		= 'Ibu Fatma Puji AstutiIibu ';
+$groom_father 		= 'Alm. Bpk. Sanijan';
+$groom_mother 		= 'Ibu Sri Lestari';
 ?>
 
 
