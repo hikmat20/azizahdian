@@ -7,7 +7,7 @@
 $event_date 		= '22 Januari 2022';
 $event_time			= '10.00 s/d 14.00';
 $event_location		= 'Rumah Mempelai Wanita';
-$event_address		= ' Jl. Kyai Hasyim, Gg. Sawo, RT/RW. 003/003, Kel. Joglo, Kec. Kembangan, Jakarta Barat. Patokan depan rumah RT Hasyim';
+$event_address		= ' Jl. Kyai Hasyim, Gg. Sawo, RT/RW. 003/003, Kel. Joglo, Kec. Kembangan, Jakarta Barat. (Patokan depan rumah RT Hasyim)';
 $maps_link			= 'https://maps.google.com/maps?q=-6.2166337%2C106.750512&z=17&hl=id';
 $embed_maps			= 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1595269791293!2d106.75042790041108!3d-6.216616810889628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf6d389d573b034d!2zNsKwMTInNTkuOSJTIDEwNsKwNDUnMDEuOCJF!5e0!3m2!1sid!2sid!4v1641056105386!5m2!1sid!2sid';
 
@@ -18,15 +18,15 @@ $bride_full_name	= 'Nur Azizah';
 $bride_ig 			= 'nurzzah_';
 $bride_child 		= '2';
 $bride_father 		= 'Bpk. Suripto';
-$bride_mother 		= 'Ibu Fatma Puji Astuti';
+$bride_mother 		= 'Ibu. Fatma Puji Astuti';
 
 //MEMPELAI PRIA
 $groom 				= 'Dian';
 $groom_ig 			= 'dooweeee';
 $groom_full_name 	= 'Dwi Kurdianto';
 $groom_child 		= '2';
-$groom_father 		= 'Alm. Bpk. Sanijan';
-$groom_mother 		= 'Ibu Sri Lestari';
+$groom_father 		= '(Alm.) Bpk. Sanijan';
+$groom_mother 		= 'Ibu. Sri Lestari';
 ?>
 
 
@@ -179,7 +179,7 @@ $groom_mother 		= 'Ibu Sri Lestari';
 						<h3 style="color:white;font-family:GreatVibes;display:block;font-size:32px">
 							Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
 						<p style="color:#ffffff;font-family:sans-serif">Dengan menyebut nama Allah Subhanahu Wa Ta'ala yang Maha Pengasih dan
-							Maha Penyayang. Kami mengundang Anda untuk menghadiri pernikahan putra-putri kami</p>
+							Maha Penyayang. Kami mengundang Anda untuk menghadiri pernikahan putra-putri kami.</p>
 					</div>
 				</div>
 				<div class="couple-wrap animate-box">
@@ -297,7 +297,7 @@ $groom_mother 		= 'Ibu Sri Lestari';
 					kesehatan dan jumlah
 					tamu undangan yang terbatas setiap sesinya, karena kondisi pandemi. Oleh karena itu, kami
 					menyarankan tamu kami untuk mengikuti protokol kesehatan sebelum memasuki venue. Kami sangat
-					menghargai dukungan dan do"anya.
+					menghargai dukungan dan do'anya.
 				<p>
 				<div class="text-center">
 					<img src="images/bg/PROKES.jpg" width="345" height="235" />
